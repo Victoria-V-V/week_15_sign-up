@@ -14,7 +14,7 @@ function signCheck()
 function check()
 {
     let firstName = document.getElementById("InputFirstName");
-    let SurName = document.getElementById("InputSurName");
+    let surName = document.getElementById("InputSurName");
     let login = document.getElementById("InputLogin");
     let password = document.getElementById("InputPassword");
     let passwordRepeat = document.getElementById("InputPasswordRepeat");
@@ -30,7 +30,7 @@ function check()
         }
 
     document.getElementById('errowMessageSurName').innerHTML = "";
-        if(SurName.value == '')
+        if(surName.value == '')
         {
         document.getElementById('errowMessageSurName')
         .innerHTML+= "Пожалуйста, укажите фамилию<br><br>";
@@ -87,7 +87,7 @@ function check()
 
         else if(tel.value.match(phoneValid))
             {
-            alert('Добро пожаловать, ' + firstName.value + ' ' + SurName.value + '!');
+            alert('Добро пожаловать, ' + firstName.value + ' ' + surName.value + '!');
             return true;
             }
             else
